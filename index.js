@@ -78,6 +78,9 @@ const hitRandomShip = () => {
   Math.floor(Math.random() * shipArray.length);
 };
 
+// fire function that, using hitRandomShip() will then damage ship and deduct hitPoints
+const fire = () => {};
+
 // function to check if game is over
 const checkIfGameOver = (shipArray) => {
   // is mothership destroyed?
@@ -89,5 +92,8 @@ const checkIfGameOver = (shipArray) => {
   }
 };
 
-// add event listener to play game button to trigger new game function
+// event listener to play game button to trigger new game function
 document.querySelector(".play-btn").addEventListener("click", () => newGame());
+
+// event listener to fire button to trigger fire function
+document.querySelector(".fire-btn").addEventListener("click", () => fire());
