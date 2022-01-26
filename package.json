@@ -1,0 +1,23 @@
+{
+  "name": "hostile-aliens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walkonmars36/hostile-aliens.git"
+  },
+  "keywords": [],
+  "author": "Mark Lawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walkonmars36/hostile-aliens/issues"
+  },
+  "homepage": "https://github.com/walkonmars36/hostile-aliens#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
