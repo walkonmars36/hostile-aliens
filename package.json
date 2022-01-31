@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/walkonmars36/hostile-aliens#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "jest": "^27.4.7"
   }
 }
