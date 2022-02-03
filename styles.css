@@ -19,34 +19,37 @@ header {
   padding: 3rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  justify-content: space-around;
-}
-
-section {
-  height: 75%;
-  margin-top: 3rem;
-}
-
 h1 {
   margin: 3rem 0;
   font-size: 3rem;
 }
 
-div {
-  display: flex;
-  justify-content: space-evenly;
-  height: 25%;
+.game-container {
+  padding: 5em 3em;
+  display: grid;
+  column-gap: 1em;
+  row-gap: 2em;
 }
 
-div > * {
+.game-container div {
   border: 1px solid red;
-  margin-top: 2rem;
+  padding: 2em;
+  line-height: 1.5;
+  overflow-x: auto;
+  font-size: 0.5rem;
+}
 
-  padding: 0.5rem;
+.mother-ship {
+  grid-row: 1;
+  grid-column: 5 / 7;
+}
+
+.attack-ship {
+  grid-row: 2;
+}
+
+.defence-ship {
+  grid-row: 3;
 }
 
 button {
@@ -56,13 +59,14 @@ button {
   padding: 2em 1em;
   border-radius: 0.5em;
   border: none;
-  margin-top: 2em;
 }
 
 .fire-btn {
+  display: flex;
+  justify-content: center;
   background-color: #f83b3a;
-  width: 50%;
-  margin: 0 auto 3rem;
+  width: 30%;
+  margin: 2rem auto;
 }
 
 .fire-btn:hover {
@@ -72,10 +76,15 @@ button {
 
 .play-btn {
   background-color: #62de6d;
-  width: 50%;
+  width: 30%;
+  margin: 2rem auto;
 }
 
 .play-btn:hover {
   background-color: #359b3d;
   color: whitesmoke;
+}
+
+.game-over {
+  text-align: center;
 }
