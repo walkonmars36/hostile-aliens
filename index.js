@@ -118,6 +118,5 @@ const playGame = new AlienGame(1, 5, 8);
 // with arguments for - numOfMotherShips, numOfAttackShips, num of DefenceShips
 playGame.createShips();
 document.querySelector(".game-container").innerHTML = playGame.renderShips();
-
 playGame.fireAndUpdate();
 playGame.resetGame();
