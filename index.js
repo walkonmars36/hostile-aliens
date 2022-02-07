@@ -34,28 +34,7 @@ class AlienGame {
     return this.shipsArray;
   }
 
-  // ORIGINAL METHOD
-  // renderShips() {
-  //   this.gameOverMessage.style.display = "none";
-  //   this.fireBtn.style.visibility = "visible";
-  //   this.playBtn.style.display = "none";
-
-  //   let html = "";
-  //   // loop through array and create div for each ship, push into html
-  //   for (let i = 0; i < this.shipsArray.length; i++) {
-  //     html += `<div class='${this.shipsArray[i][0].toLowerCase()}'>`;
-  //     for (let j = 0; j < 2; j++) {
-  //       html += `${this.shipsArray[i][j]} `;
-  //     }
-
-  //     html += "</div>";
-  //   }
-
-  //   return html;
-
-  // }
-
-  // Using map()
+  //  Using map() to push ships from shipsArray into new array shipDivs to display in html
   renderShips() {
     this.gameOverMessage.style.display = "none";
     this.fireBtn.style.visibility = "visible";
