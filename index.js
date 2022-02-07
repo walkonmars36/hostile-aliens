@@ -34,22 +34,37 @@ class AlienGame {
     return this.shipsArray;
   }
 
-  // method to render shipsArray to the screen
+  // ORIGINAL METHOD
+  // renderShips() {
+  //   this.gameOverMessage.style.display = "none";
+  //   this.fireBtn.style.visibility = "visible";
+  //   this.playBtn.style.display = "none";
+
+  //   let html = "";
+  //   // loop through array and create div for each ship, push into html
+  //   for (let i = 0; i < this.shipsArray.length; i++) {
+  //     html += `<div class='${this.shipsArray[i][0].toLowerCase()}'>`;
+  //     for (let j = 0; j < 2; j++) {
+  //       html += `${this.shipsArray[i][j]} `;
+  //     }
+
+  //     html += "</div>";
+  //   }
+
+  //   return html;
+
+  // }
+
+  // Using map()
   renderShips() {
     this.gameOverMessage.style.display = "none";
     this.fireBtn.style.visibility = "visible";
     this.playBtn.style.display = "none";
-
     let html = "";
-    // loop through array and create div for each ship, push into html
-    for (let i = 0; i < this.shipsArray.length; i++) {
-      html += `<div class='${this.shipsArray[i][0].toLowerCase()}'>`;
-      for (let j = 0; j < 2; j++) {
-        html += `${this.shipsArray[i][j]} `;
-      }
+    const shipDivs = this.shipsArray.map((ship) => `<div>${ship[0]} ${ship[1]}</div>`);
 
-      html += "</div>";
-    }
+    // console.log(shipDivs);
+    html = shipDivs.join(" ");
     return html;
   }
 
